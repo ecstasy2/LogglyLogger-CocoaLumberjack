@@ -53,10 +53,10 @@
     });
 }
 
-- (void)setUserid:(NSString *)userid {
+- (void)setEmail:(NSString *)email {
     dispatch_barrier_async(_queue, ^{
         NSMutableDictionary *dict = [_fieldsDictionary mutableCopy];
-        [dict setObject:userid forKey:@"userid"];
+        [dict setObject:email forKey:@"email"];
         _fieldsDictionary = [NSDictionary dictionaryWithDictionary:dict];
     });
 }
