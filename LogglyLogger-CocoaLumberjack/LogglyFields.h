@@ -6,6 +6,6 @@
 #import "LogglyFormatter.h"
 
 @interface LogglyFields : NSObject <LogglyFieldsDelegate>
-@property (strong, nonatomic) NSString *userid;
+@property (strong, nonatomic) NSString *email;
 @property (strong, nonatomic) NSString *sessionid;
 @end
